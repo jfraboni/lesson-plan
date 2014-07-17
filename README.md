@@ -8,7 +8,7 @@ FIRSTLY,
 
 3. Use this link to learn the markdown to format your lesson:
 
-    https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+        https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 4. Delete these 4 steps and begin to edit your lesson plan!
 

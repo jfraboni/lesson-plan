@@ -2,6 +2,20 @@ My Lesson
 =======================
 A blurb about my lesson...
 
+Change the setup command to include the url to your lesson plan on github!
+
+# Installation
+
+### On runnable.com:
+Create a new node app, and from the terminal, enter or cut and paste the following commands, then press enter or return:
+    
+    git clone https://github.com/myuser/my-lesson.git spark && spark/setup.sh
+    
+...some text will fly by as the repository is cloned locally and the project is setup.
+
+Great, you're set to roll!
+
+
 # This is How You Format A Title
 
 **This will format bold**

@@ -1,8 +1,23 @@
+FIRSTLY,
+
+1. Clone this lesson to your runnable.com workspace
+
+	git clone https://github.com/jfraboni/Lesson-Plan.git
+
+2. Next, change the setup command to include the url to your lesson plan on github!
+
+3. Use this link to learn the markdown to format your lesson:
+
+	https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+4. Delete these 4 steps and begin to edit your lesson plan!
+
+
+
+
 My Lesson
 =======================
 A blurb about my lesson...
-
-Change the setup command to include the url to your lesson plan on github!
 
 # Installation
 

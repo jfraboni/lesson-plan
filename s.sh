@@ -19,7 +19,7 @@ then
 	  rm server.js
   fi
 
-  mv .gitignore .
+  mv lesson-plan/.gitignore .
   mv lesson-plan/* .
   rm -rf lesson-plan
 
@@ -87,7 +87,10 @@ git config --global user.name "${config["name"]}"
 
 git init
 
-prompt "Paste-in the URL to your github repository (Example: https://github.com/my-github-user/my-github-repository.git):\n" "repo"
+printf "You now need to pair your workspace repository with your github repository.\n"
+printf "Copy the URL to your repo, example: https://github.com/my-github-user/my-github-repository.git\n"
+
+prompt "Paste-in the URL to your github repository:" "repo"
 
 git remote add origin "${config["repo"]}"
 

@@ -74,6 +74,8 @@ prompt() {
   handle_input "$key" "$input" "$message"
 }
 
+echo "Initialize a github repository?"
+
 prompt "Enter git email (q to quit)" "email"
 prompt "Enter git name" "name"
 
@@ -84,6 +86,11 @@ git config --global user.name "${config["name"]}"
 
 git init
 git add .
+git commit -m "* init"
 
-
+echo "0. Both \"git init\" and \"git add .\" and \"git commit -m \"* init\"\" where executed! \n\n"
+echo "===================================================\n"
+echo "1. Don't forget to run \"git remote add origin https://github.com/myuser/myrepository.git\" to add your remote repository!"
+echo "2. Then run \"git push -u origin master\" to push your first change-set...\n"
+echo "===================================================\n"
 

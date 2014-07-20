@@ -19,6 +19,7 @@ then
 	  rm server.js
   fi
 
+  mv .gitignore .
   mv lesson-plan/* .
   rm -rf lesson-plan
 

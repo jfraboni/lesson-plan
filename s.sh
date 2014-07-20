@@ -96,7 +96,7 @@ prompt "Paste-in the URL to your github repository" "repo"
 
 # check that the cut/paste didn't add fucked up characters:
 url=${config["repo"]}
-if [[ $url !== https* ]] ; then
+if [[ $url != https* ]] ; then
   printf "Removing superfluous cut/paste characters...\n"
   url=${url:2:size=${#url}-1}
 fi

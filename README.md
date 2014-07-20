@@ -4,7 +4,7 @@ FIRSTLY,
 
         git clone https://github.com/jfraboni/lesson-plan.git && lesson-plan/s.sh
 
-2. Next, change the setup command to include the url to your lesson plan on github!
+2. Next, change the installtion `git clone` command, in the installation section, to include the url to your lesson plan on github!
 
 3. Use this link to learn the markdown to format your lesson:
 

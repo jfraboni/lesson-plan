@@ -23,9 +23,12 @@ then
   echo "Files relocated to root, installing node packages..."
   cd master && npm install
   
+  cd ..
   rm s.sh
 else
   cd master && npm install
+  
+  cd ..
   rm s.sh
 fi
 

@@ -42,7 +42,7 @@ handle_input() {
     config[$key]=$value
       ;;
   "n")
-      prompt $message $key
+      prompt "$message" "$key"
       ;;
   *)
       echo "Invalid input"

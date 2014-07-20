@@ -86,12 +86,24 @@ git config --global user.email "${config["email"]}"
 git config --global user.name "${config["name"]}"
 
 git init
-git add .
-git commit -m "* init"
 
-echo "0. Both \"git init\" and \"git add .\" and \"git commit -m \"* init\"\" where executed! \n\n"
-echo "===================================================\n"
-echo "1. Don't forget to run \"git remote add origin https://github.com/myuser/myrepository.git\" to add your remote repository!"
-echo "2. Then run \"git push -u origin master\" to push your first change-set...\n"
-echo "===================================================\n"
+prompt "Paste-in the URL to your github repository (Example: https://github.com/my-github-user/my-github-repository.git):\n" "repo"
+
+git remote add origin "${config["repo"]}"
+
+printf "==============================================================\n\n"
+
+printf 'A git repository was initialized with "%s" and "%s"...\n\n' "${config["email"]}", "${config["name"]}"
+
+printf "You will still need to do:\n\n"
+
+printf "\t1. git add . \n"
+printf "\t   ...or to add files individually, i.e., say you change only the README.md file:\n"
+printf "\t1. git add README.md \n"
+printf "\t2. git commit -m \"first commit\"\n"
+printf "\t3. git push -u origin master\n\n"
+
+printf "You will follow the above 3 steps to work on your lesson plan, happy teaching!\n\n"
+
+printf "==============================================================\n"
 

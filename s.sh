@@ -1,36 +1,36 @@
 #!/usr/bin/env bash
 
-# declare -A config
+declare -A config
 
-# echo "executing lesson set up..."
+echo "executing lesson set up..."
 
-# if [[ `hostname -s` = "runnable" ]]
-# then
-#   echo "...on runnable..."
+if [[ `hostname -s` = "runnable" ]]
+then
+  echo "...on runnable..."
 
-#   if [ -e "package.json" ]
-# 	then
-# 	  echo "removing original package.json"
-# 	  rm package.json
-#   fi
-#   if [ -e "server.js" ]
-# 	then
-# 	  echo "removing original server.js"
-# 	  rm server.js
-#   fi
+  if [ -e "package.json" ]
+	then
+	  echo "removing original package.json"
+	  rm package.json
+  fi
+  if [ -e "server.js" ]
+	then
+	  echo "removing original server.js"
+	  rm server.js
+  fi
 
-#   mv lesson-plan/.gitignore .
-#   mv lesson-plan/* .
-#   rm -rf lesson-plan
+  mv lesson-plan/.gitignore .
+  mv lesson-plan/* .
+  rm -rf lesson-plan
 
-#   echo "Files relocated to root, installing node packages..."
-#   cd master && npm install
-# else
-#   cd lesson-plan/master && npm install
-# fi
+  echo "Files relocated to root, installing node packages..."
+  cd master && npm install
+else
+  cd lesson-plan/master && npm install
+fi
 
-# cd ..
-# rm s.sh
+cd ..
+rm s.sh
 
 handle_input() {
     key=$1
@@ -75,17 +75,17 @@ prompt() {
   handle_input "$key" "$input" "$message"
 }
 
-# echo "Initialize a github repository?"
+echo "Initialize a github repository?"
 
-# prompt "Enter git email (q to quit)" "email"
-# prompt "Enter git name" "name"
+prompt "Enter git email (q to quit)" "email"
+prompt "Enter git name" "name"
 
-# printf 'Configurating git with "%s" and "%s"...\n\n' "${config["email"]}", "${config["name"]}"
+printf 'Configurating git with "%s" and "%s"...\n\n' "${config["email"]}", "${config["name"]}"
 
-# git config --global user.email "${config["email"]}"
-# git config --global user.name "${config["name"]}"
+git config --global user.email "${config["email"]}"
+git config --global user.name "${config["name"]}"
 
-# git init
+git init
 
 printf "\nYou now need to pair your workspace repository with your github repository.\n"
 printf "Copy the URL for your repo, example: https://github.com/my-github-user/my-github-repository.git\n\n"
@@ -99,7 +99,7 @@ if [[ $url == \^\[v* ]] ; then
   url=${url:3:size=${#url}-1}
 fi
 echo $url
-# git remote add origin "${url}"
+git remote add origin "${url}"
 
 printf "==============================================================\n\n"
 

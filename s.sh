@@ -33,11 +33,11 @@ cd ..
 rm s.sh
 
 handle_input() {
-    key=$1
-    value=$2
-    message=$3
+  key=$1
+  value=$2
+  message=$3
 
-    echo -n "$value : cool? (y/n): "
+  echo -n "$value : cool? (y/n): "
   read response
 
   case $response in
@@ -88,12 +88,17 @@ git config --global user.name "${config["name"]}"
 git init
 
 printf "\nYou now need to pair your workspace repository with your github repository.\n"
+
+# try to figure this out... there's a problem with pasting with the read command
 printf "Copy the URL for your repo, example: https://github.com/my-github-user/my-github-repository.git\n\n"
 
-prompt "Paste-in the URL to your github repository" "repo"
+# prompt "Paste-in the URL to your github repository" "repo"
+
+echo -n "Which colour of hair do you have? "
+read url
 
 # check that the cut/paste didn't add fucked up characters:
-url=${config["repo"]}
+#url=${config["repo"]}
 if [[ $url == \^\[v* ]] ; then
   printf "Removing superfluous cut/paste characters...\n"
   url=${url:3:size=${#url}-1}

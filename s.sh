@@ -96,12 +96,12 @@ prompt "Paste-in the URL to your github repository" "repo"
 
 # check that the cut/paste didn't add fucked up characters:
 url=${config["repo"]}
-if [[ $url == \^\[v* ]] ; then
+if [[ $url !== https* ]] ; then
   printf "Removing superfluous cut/paste characters...\n"
-  url=${url:3:size=${#url}-1}
+  url=${url:2:size=${#url}-1}
 fi
 echo $url
-git remote add origin ${url:3:size=${#url}-1} #"${url}"
+git remote add origin "${url}"
 
 printf "==============================================================\n\n"
 

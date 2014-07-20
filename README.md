@@ -1,4 +1,6 @@
-# READ THIS FIRST: Preliminary Setup Steps:
+# READ THIS FIRST
+
+## Preliminary Setup Steps:
 
 Please follow these next steps to setup your lesson plan in your workspace, either on runnable.com or locally.  Once you're finished with the setup, you should delete these steps from this READM.md file, as it will serve as your lesson plan.  In other words, delete everything in the README.md file above **My Lesson**, then edit the lesson plan to reflect your lesson.
 

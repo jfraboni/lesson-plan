@@ -32,3 +32,5 @@ else
   rm s.sh
 fi
 
+git init
+git add .

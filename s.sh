@@ -87,10 +87,10 @@ git config --global user.name "${config["name"]}"
 
 git init
 
-printf "You now need to pair your workspace repository with your github repository.\n"
-printf "Copy the URL to your repo, example: https://github.com/my-github-user/my-github-repository.git\n"
+printf "\nYou now need to pair your workspace repository with your github repository.\n"
+printf "Copy the URL for your repo, example: https://github.com/my-github-user/my-github-repository.git\n\n"
 
-prompt "Paste-in the URL to your github repository:" "repo"
+prompt "Paste-in the URL to your github repository" "repo"
 
 git remote add origin "${config["repo"]}"
 

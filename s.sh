@@ -92,19 +92,16 @@ printf "\nYou now need to pair your workspace repository with your github reposi
 # try to figure this out... there's a problem with pasting with the read command
 printf "Copy the URL for your repo, example: https://github.com/my-github-user/my-github-repository.git\n\n"
 
-# prompt "Paste-in the URL to your github repository" "repo"
-
-echo -n "Which colour of hair do you have? "
-read url
+prompt "Paste-in the URL to your github repository" "repo"
 
 # check that the cut/paste didn't add fucked up characters:
-#url=${config["repo"]}
+url=${config["repo"]}
 if [[ $url == \^\[v* ]] ; then
   printf "Removing superfluous cut/paste characters...\n"
   url=${url:3:size=${#url}-1}
 fi
 echo $url
-git remote add origin "${url}"
+git remote add origin ${url:3:size=${#url}-1} #"${url}"
 
 printf "==============================================================\n\n"
 

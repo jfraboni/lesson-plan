@@ -2,7 +2,7 @@ FIRSTLY,
 
 1. Clone this lesson to your runnable.com workspace:
 
-        git clone https://github.com/jfraboni/Lesson-Plan.git
+        git clone https://github.com/jfraboni/lesson-plan.git
 
 2. Next, change the setup command to include the url to your lesson plan on github!
 

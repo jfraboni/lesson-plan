@@ -77,10 +77,10 @@ prompt() {
 prompt "Enter git email (q to quit)" "email"
 prompt "Enter git name" "name"
 
-echo "Configurating git with $config[email] and $config[name]..."
+printf 'Configurating git with "%s" and "%s"...' "${config["email"]", "${config["name"]"
 
-git config --global user.email "$config[email]"
-git confit --global user.name "$config[name]"
+git config --global user.email "$config['email']"
+git confit --global user.name "$config['name']"
 
 git init
 git add .

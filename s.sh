@@ -77,7 +77,7 @@ prompt() {
 prompt "Enter git email (q to quit)" "email"
 prompt "Enter git name" "name"
 
-printf 'Configurating git with "%s" and "%s"...' "${config["email"]}", "${config["name"]}"
+printf 'Configurating git with "%s" and "%s"...\n\n' "${config["email"]}", "${config["name"]}"
 
 git config --global user.email "${config["email"]}"
 git config --global user.name "${config["name"]}"

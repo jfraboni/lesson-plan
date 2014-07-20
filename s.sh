@@ -60,7 +60,7 @@ prompt() {
   IFS= read -r -p "$message: " input
 
   # if user elects to quit (q), exit early
-  if [[ "$input" == "a" ]]; then
+  if [[ "$input" == "q" ]]; then
     return
   fi
 

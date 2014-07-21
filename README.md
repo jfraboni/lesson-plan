@@ -75,3 +75,6 @@ Often after you've explain the concept, shown code examples, then given some cod
 And this is how you put a box around your text:
 
     # ./my-lesson.js
+
+
+&copy; John Fraboni 2014

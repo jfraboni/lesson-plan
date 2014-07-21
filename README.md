@@ -74,4 +74,4 @@ Often after you've explain the concept, shown code examples, then given some cod
 **Run the App** Switch to the command line, and go ahead and run the app like so:
 And this is how you put a box around your text:
 
-    # ./magic-eight-ball.js
+    # ./my-lesson.js

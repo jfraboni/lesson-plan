@@ -30,7 +30,7 @@ Please follow these next steps to setup your lesson plan in your workspace, eith
 
         https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-4. Delete these 4 steps and begin to edit your lesson plan!
+4. Delete these 5 steps and begin to edit your lesson plan!
 
 
 
